@@ -34,7 +34,7 @@ exports.deleteMovie = async (deleteObj) => {
     }
 }
 
-exports.updateMovie = async (param, filterObj, update) =>{
+exports.updateMovie = async (param, filterObj, update) => {
     try {
         if (param === "title"){
         await Movie.update({title: update}, {where: {title: filterObj}});
